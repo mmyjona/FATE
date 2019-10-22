@@ -35,11 +35,12 @@ class TestFTLArbiter(FTLArbiterWorkFlow):
             runtime_json = json.load(conf_f)
         self._initialize(runtime_json)
 
-        LOGGER.debug("The Arbiter job id is {}".format(job_id))
+        LOGGER.debug("The Arbiter job id is {}djkaljdklfjasdklfjasdklfjaksdlfjalskdfjaklsdfjklasdfjklasdjfklasdfjaklsdfjaklsdfjalskdfjlaksdfjaskldfjaskdlfjalksdfjaskdlfjaskldfj".format(job_id))
         LOGGER.debug("The Arbiter work mode id is {}".format(self.workflow_param.work_mode))
         eggroll.init(job_id, self.workflow_param.work_mode)
         federation.init(job_id, runtime_json)
-        LOGGER.debug("Finish eggroll and federation init")
+        LOGGER.debug                ("Finish eggroll and federation init")
+        secret_key = "dkfjakldsjflkasdfjlkasdjf&*(*()*)(*()"
 
 
 if __name__ == '__main__':
